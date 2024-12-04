@@ -4,78 +4,127 @@
     background-size: cover; /* L'image couvre tout le conteneur */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Pas de répétition */
-    color: white; /* Facultatif : couleur du texte */
-    padding: 0; /* Supprimez tout padding global si nécessaire */
-    height: 100vh;
+    color: white; /* Couleur du texte */
+    height: 100vh; /* Hauteur égale à celle de l'écran */
+    display: flex; /* Utilise flexbox pour centrer les enfants */
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte dans la section */
 }
 
 /* Header styling */
 header {
-    display: flex; /* Flexbox pour aligner les enfants */
-    justify-content: space-between; /* Sépare le logo à gauche et les liens à droite */
-    align-items: center; /* Centre verticalement les éléments */
-    padding: 20px; /* Ajoute un peu de padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px; /* Ajoute de l'espace autour */
+    position: absolute; /* Fixe le header en haut */
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 header a {
-    text-decoration: none; /* Supprime le soulignement des liens */
-    color: white; /* Couleur du texte */
-    margin-left: 53px; /* Espacement entre chaque lien */
-    font-size: 16px; /* Ajustez selon Figma */
+    text-decoration: none;
+    color: white;
+    margin-left: 53px;
+    font-size: 16px;
 }
 
 header img {
-    height: 50px; /* Ajustez la taille du logo si nécessaire */
+    height: 50px;
 }
 
-/* Titre des sections */
+/* Hero content */
+.hero-content {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center;
+    gap: 20px; /* Espace entre chaque élément */
+}
+
+.hero-content h1 {
+    font-size: 64px; /* Taille du texte */
+    font-weight: bold; /* Gras pour le titre */
+    width: 684px; /* Largeur fixe du texte */
+    height: 151px; /* Hauteur conforme à Figma */
+    line-height: 1.2; /* Ajuste l'interligne */
+}
+
+.hero-content .hero-text {
+    display: flex;
+    gap: 20px; /* Espace entre les mots */
+    justify-content: center;
+}
+
+.hero-content .hero-text p {
+    font-size: 24px; /* Taille des textes SMILES, GRIN, LAUGH */
+    margin: 0;
+}
+
+.hero-content button {
+    background-color: #C271FF; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 20px; /* Coins arrondis (gauche et droite) */
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Style pour les sections */
+section {
+    margin: 40px 20px;
+}
+
 section h2 {
-    text-align: center; /* Centre le titre */
-    margin-bottom: 20px; /* Ajoute un espace sous le titre */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Couleur spécifique pour "Learn" */
+section h2 span {
+    color: #C271FF; /* Couleur pour le mot Learn */
+    font-weight: bold;
 }
 
 /* Conteneur global des pros */
 .pros-container {
-    display: flex; /* Affiche les divs en ligne */
-    justify-content: space-between; /* Espace égal entre les pros */
-    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
-    gap: 20px; /* Espace entre les divs */
-    text-align: center; /* Centre le texte dans chaque pro */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 90px; /* Augmente l'espacement entre les pros */
+    text-align: center;
 }
 
 /* Style pour chaque pro */
 .pro {
-    flex: 1; /* Chaque élément prend une largeur égale */
-    max-width: 250px; /* Limite la largeur des divs */
+    flex: 1;
+    max-width: 250px;
     display: flex;
-    flex-direction: column; /* Empile l'image et le texte verticalement */
-    align-items: center; /* Centre le contenu horizontalement */
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Style pour les images */
 .pro img {
-    width: 150px; /* Largeur fixe pour les images */
-    height: 150px; /* Hauteur fixe pour les images */
-    border-radius: 50%; /* Ajoute un effet arrondi */
-    object-fit: cover; /* Évite les déformations */
-    margin-bottom: 10px; /* Espace entre l'image et le texte */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-/* Style pour les noms */
 .pro h3 {
-    margin: 10px 0 5px; /* Espace autour du titre */
-    font-size: 18px; /* Taille du texte du nom */
-    color: white; /* Couleur du texte */
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: white;
 }
 
-/* Style pour les descriptions */
 .pro p {
-    font-size: 14px; /* Taille de la description */
-    color: #FFFF; /* Couleur plus claire pour le texte */
-    margin: 0; /* Supprime les marges par défaut */
-}
-
-/* Style général pour les sections */
-section {
-    margin: 40px 20px; /* Ajoute des marges pour aérer */
+    font-size: 14px;
+    color: #FFFF;
+    margin: 0;
 }
