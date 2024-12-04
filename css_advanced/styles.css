@@ -1,0 +1,81 @@
+/* Section hero avec background */
+.hero {
+    background-image: url('images/background.png'); /* Chemin vers votre image */
+    background-size: cover; /* L'image couvre tout le conteneur */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Pas de répétition */
+    color: white; /* Facultatif : couleur du texte */
+    padding: 0; /* Supprimez tout padding global si nécessaire */
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    display: flex; /* Flexbox pour aligner les enfants */
+    justify-content: space-between; /* Sépare le logo à gauche et les liens à droite */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 20px; /* Ajoute un peu de padding */
+}
+
+header a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: white; /* Couleur du texte */
+    margin-left: 53px; /* Espacement entre chaque lien */
+    font-size: 16px; /* Ajustez selon Figma */
+}
+
+header img {
+    height: 50px; /* Ajustez la taille du logo si nécessaire */
+}
+
+/* Titre des sections */
+section h2 {
+    text-align: center; /* Centre le titre */
+    margin-bottom: 20px; /* Ajoute un espace sous le titre */
+}
+
+/* Conteneur global des pros */
+.pros-container {
+    display: flex; /* Affiche les divs en ligne */
+    justify-content: space-between; /* Espace égal entre les pros */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 20px; /* Espace entre les divs */
+    text-align: center; /* Centre le texte dans chaque pro */
+}
+
+/* Style pour chaque pro */
+.pro {
+    flex: 1; /* Chaque élément prend une largeur égale */
+    max-width: 250px; /* Limite la largeur des divs */
+    display: flex;
+    flex-direction: column; /* Empile l'image et le texte verticalement */
+    align-items: center; /* Centre le contenu horizontalement */
+}
+
+/* Style pour les images */
+.pro img {
+    width: 150px; /* Largeur fixe pour les images */
+    height: 150px; /* Hauteur fixe pour les images */
+    border-radius: 50%; /* Ajoute un effet arrondi */
+    object-fit: cover; /* Évite les déformations */
+    margin-bottom: 10px; /* Espace entre l'image et le texte */
+}
+
+/* Style pour les noms */
+.pro h3 {
+    margin: 10px 0 5px; /* Espace autour du titre */
+    font-size: 18px; /* Taille du texte du nom */
+    color: white; /* Couleur du texte */
+}
+
+/* Style pour les descriptions */
+.pro p {
+    font-size: 14px; /* Taille de la description */
+    color: #FFFF; /* Couleur plus claire pour le texte */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+/* Style général pour les sections */
+section {
+    margin: 40px 20px; /* Ajoute des marges pour aérer */
+}
