@@ -124,7 +124,7 @@ section h1 span {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 120px;
     text-align: center;
 }
 
