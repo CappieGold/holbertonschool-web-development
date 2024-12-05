@@ -1,36 +1,39 @@
 /* Section hero avec background */
 .hero {
-    background-image: url('images/background.png'); /* Chemin vers votre image */
-    background-size: cover; /* L'image couvre tout le conteneur */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Pas de répétition */
-    color: white; /* Couleur du texte */
-    height: 100vh; /* Hauteur égale à celle de l'écran */
-    display: flex; /* Utilise flexbox pour centrer les enfants */
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
-    justify-content: center; /* Centre verticalement */
-    align-items: center; /* Centre horizontalement */
-    text-align: center; /* Centre le texte dans la section */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* Header styling */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Sépare le logo et les liens */
     align-items: center;
     width: 100%;
     padding: 20px 50px; /* Ajoute de l'espace autour */
-    position: absolute; /* Fixe le header en haut */
-    top: 0;
-    left: 0;
-    z-index: 10;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 header a {
     text-decoration: none;
     color: white;
-    margin-left: 53px;
+    margin-left: 20px; /* Réduit l'espacement entre les liens */
     font-size: 16px;
+    font-weight: 600;
 }
 
 header img {
@@ -40,35 +43,35 @@ header img {
 /* Hero content */
 .hero-content {
     display: flex;
-    flex-direction: column; /* Empile les éléments verticalement */
+    flex-direction: column;
     align-items: center;
-    gap: 20px; /* Espace entre chaque élément */
+    gap: 10px;
 }
 
 .hero-content h1 {
-    font-size: 64px; /* Taille du texte */
-    font-weight: bold; /* Gras pour le titre */
-    width: 684px; /* Largeur fixe du texte */
-    height: 151px; /* Hauteur conforme à Figma */
-    line-height: 1.2; /* Ajuste l'interligne */
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
 }
 
 .hero-content .hero-text {
     display: flex;
-    gap: 20px; /* Espace entre les mots */
+    gap: 60px;
     justify-content: center;
+    margin-top: 2px;
 }
 
 .hero-content .hero-text p {
-    font-size: 24px; /* Taille des textes SMILES, GRIN, LAUGH */
+    font-size: 24px;
     margin: 0;
 }
 
 .hero-content button {
-    background-color: #C271FF; /* Couleur de fond du bouton */
-    color: white; /* Couleur du texte */
+    background-color: #C271FF;
+    color: white;
     border: none;
-    border-radius: 20px; /* Coins arrondis (gauche et droite) */
+    border-radius: 20px;
     padding: 15px 30px;
     font-size: 16px;
     cursor: pointer;
@@ -85,9 +88,8 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* Couleur spécifique pour "Learn" */
 section h2 span {
-    color: #C271FF; /* Couleur pour le mot Learn */
+    color: #C271FF;
     font-weight: bold;
 }
 
@@ -96,7 +98,7 @@ section h2 span {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 90px; /* Augmente l'espacement entre les pros */
+    gap: 90px;
     text-align: center;
 }
 
