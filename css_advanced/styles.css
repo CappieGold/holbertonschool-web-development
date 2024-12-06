@@ -33,12 +33,13 @@ header a {
 }
 
 header img {
-    height: 50px;
+    height: 30px;
+    width: 167px;
 }
 
 nav {
     display: flex;
-    gap: 20px;
+    gap: 60px;
 }
 
 /* Hero Section */
