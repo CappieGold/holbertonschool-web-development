@@ -396,7 +396,7 @@ button {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #071629;
     color: white;
     padding: 20px 50px;
 }
@@ -405,11 +405,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 249px;
+    width: auto;
     flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .footer-content img {
-    height: 40px;
+    height: 30px;
+    width: 169px;
 }
 
 .social-media {
@@ -418,12 +423,16 @@ footer {
 }
 
 .social-media img {
-    height: 24px;
-    width: 24px;
+    height: 30px;
+    width: 30px;
 }
 
 .footer-content p {
     font-size: 14px;
+    color: rgba(255, 255, 255, 0.3517);
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Responsive adjustments */
